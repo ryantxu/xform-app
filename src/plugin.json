@@ -1,0 +1,36 @@
+{
+  "type": "app",
+  "name": "XForms",
+  "id": "grafana-xforms-app",
+
+  "preload": true,
+  
+  "info": {
+    "author": {
+      "name": "Grafana Project",
+      "url": "https://grafana.com"
+    },
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+
+  "includes": [
+    {
+      "type": "page",
+      "name": "Root Page (react)",
+      "path": "/a/grafana-screens-app",
+      "role": "Viewer",
+      "addToNav": true,
+      "defaultNav": true
+    }
+  ],
+
+  "dependencies": {
+    "grafanaVersion": "7.1.x",
+    "plugins": []
+  }
+}
