@@ -1,7 +1,7 @@
-import { PluginMeta } from "@grafana/data";
+import { PluginMeta } from '@grafana/data';
 
 export class ExampleConfigCtrl {
-  static templateUrl = "legacy/config.html";
+  static templateUrl = 'legacy/config.html';
 
   appEditCtrl: any;
   appModel?: PluginMeta;
@@ -21,16 +21,16 @@ export class ExampleConfigCtrl {
       appModel.jsonData = {};
     }
 
-    console.log("ExampleConfigCtrl", this);
+    console.log('ExampleConfigCtrl', this);
   }
 
   postUpdate() {
     if (!this.appModel?.enabled) {
-      console.log("Not enabled...");
+      console.log('Not enabled...');
       return;
     }
 
     // TODO, can do stuff after update
-    console.log("Post Update:", this);
+    console.log('Post Update:', this);
   }
 }

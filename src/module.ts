@@ -1,22 +1,12 @@
-import { ComponentClass } from "react";
+import { ExampleConfigCtrl } from './legacy/config';
+import { AppPlugin, standardTransformersRegistry } from '@grafana/data';
+import { XFormAppSettings } from './types';
+import { stringJoinTransformRegistryItem } from './transformers/StringJoinTransformerEditor';
 
-import { ExampleConfigCtrl } from "./legacy/config";
-import {
-  AppPlugin,
-  AppRootProps,
-  standardTransformersRegistry
-} from "@grafana/data";
-import { ExampleRootPage } from "./ExampleRootPage";
-import { ScreensAppSettings } from "./types";
-import { prefixJoinTransformRegistryItem } from "./transformers/PrefixJoinTransformerEditor";
-
-// Legacy exports just for testing
 export { ExampleConfigCtrl as ConfigCtrl };
 
-export const plugin = new AppPlugin<ScreensAppSettings>().setRootPage(
-  (ExampleRootPage as unknown) as ComponentClass<AppRootProps>
-);
+export const plugin = new AppPlugin<XFormAppSettings>();
 
-standardTransformersRegistry.register(prefixJoinTransformRegistryItem);
+standardTransformersRegistry.register(stringJoinTransformRegistryItem);
 
-console.log("registered custom transformer");
+console.log('registered custom transformer');

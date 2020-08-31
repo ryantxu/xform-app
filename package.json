@@ -11,9 +11,11 @@
   "author": "Grafana Labs",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@types/lodash": "^4.14.160",
     "@grafana/data": "latest",
     "@grafana/toolkit": "latest",
     "@grafana/runtime": "latest",
-    "@grafana/ui": "latest"
+    "@grafana/ui": "latest",
+    "lodash": "latest"
   }
 }
