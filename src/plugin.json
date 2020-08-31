@@ -1,6 +1,7 @@
 {
   "type": "app",
   "name": "XForms",
+  
   "id": "grafana-xforms-app",
 
   "preload": true,
@@ -18,19 +19,10 @@
     "updated": "%TODAY%"
   },
 
-  "includes": [
-    {
-      "type": "page",
-      "name": "Root Page (react)",
-      "path": "/a/grafana-screens-app",
-      "role": "Viewer",
-      "addToNav": true,
-      "defaultNav": true
-    }
-  ],
+  "includes": [],
 
   "dependencies": {
-    "grafanaVersion": "7.1.x",
+    "grafanaVersion": "7.0.x",
     "plugins": []
   }
 }

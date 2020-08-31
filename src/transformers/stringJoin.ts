@@ -206,6 +206,7 @@ function getNormalizedField(frame: DataFrame, opts: FieldNormOptions, name: stri
   const norm: Field<string> = {
     ...field,
     name,
+    config: {}, // Remove the name from the datasource
     state: undefined, // remove state
   };
   if (opts.regexp) {

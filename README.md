@@ -1,21 +1,9 @@
-# Simple App Plugin
+# App with custom transformations
 
-This is just a stub to show how you can create a basic visualization plugin.
+This plugin explores adding a custom transformation on grafana startup.
 
-To work with this plugin run:
+
+To build it run:
 ```
 yarn dev
-```
-
-or
-```
-yarn watch
-```
-
-This will run linting tools and apply prettier fix.
-
-
-To build the plugin run:
-```
-yarn build
 ```
